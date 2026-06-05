@@ -1,0 +1,9 @@
+import { somaHorasExtras, calculaDescontos } from '../index';
+
+test('Deve retorna a soma das horas extras', () => {
+  const esperado = 2500;
+  const retornado = somaHorasExtras(2000, 500);
+
+  expect(retornado).toBe(esperado);
+});
+
