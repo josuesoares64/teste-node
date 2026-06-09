@@ -6,10 +6,12 @@
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "tests": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles"
-  },
+"scripts": {
+  "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+  "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+  "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --watch",
+  "test:watch:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --coverage --watch"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
